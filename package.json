@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "7.10.1"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
     "build": "webpack",
+    "start": "node index.js",
+    "heroku-postbuild": "webpack",
     "watch": "webpack-dev-server --inline --hot"
   },
   "dependencies": {
@@ -22,11 +27,13 @@
     "enzyme": "^2.9.1",
     "eslint": "^4.2.0",
     "eslint-plugin-react": "^7.1.0",
+    "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
     "jest": "^20.0.4",
     "lodash": "^4.17.4",
+    "morgan": "^1.8.2",
     "node-sass": "^4.5.3",
     "raw-loader": "^0.5.1",
     "react": "^15.6.1",
