@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Roboto+Mono|Fredoka+One);* {
+  position: static;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  white-space: normal;
+  background: none;
+  color: #000;
+  list-style: none;
+}
+
+form *:focus {
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  position: relative;
+}
+
+head,
+script,
+link {
+  display: none;
+}
+
+p {
+  display: inline-block;
+}
+
+span,
+em,
+strong {
+  display: inline;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+body {
+  background: #fff;
+  font-size: 16px;
+}
+
+blockquote {
+  border-left: 0.5em solid #B5BAC3;
+  padding-left: 0.5em;
+}
+
+h6 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1.28571em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+label {
+  font-size: 1.25em;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+
+textarea,
+input {
+  padding: 0.5em;
+  border: 1px solid #B5BAC3;
+  margin-bottom: 0.5em;
+  resize: none;
+}
+
+textarea:focus,
+input:focus {
+  border: 1px solid #6E7177;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #B5BAC3;
+}
+
+button,
+input[type="submit"] {
+  background: #B5BAC3;
+  padding: 0.5em;
+  border: none;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #7A7D84;
+}
+
+button:active,
+input[type="submit"]:active {
+  background: #6E7177;
+}
+
+ul,
+ol,
+li {
+  margin-left: 1em;
+}
+
+li {
+  display: list-item;
+}
+
+ul li {
+  list-style: disc;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+ol ol li,
+ul ol li {
+  list-style: lower-alpha;
+}
+
+ol ul li,
+ul ul li {
+  list-style: square;
+}
+
+.hide {
+  display: none;
+}
