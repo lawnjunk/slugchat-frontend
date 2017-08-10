@@ -10,12 +10,15 @@ export const initSubscribers = (store) => (...subscribers) => {
   .forEach(event => {
     socket.on(event.type, (data) => {
       util.log('__EVENT__', event.type, data)
+      try {
       event.handler({
         // overwrite dispatch so that data coming from the server 
         // wont get re-dispatched to the server in the redux-realtime
         dispatch: (action) => store.dispatch({blockRealtime: true, ...action}),
         getState: store.getState,
       })(socket)(data)
+      } catch (error) {
+      }
     })
   })
 }
